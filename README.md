@@ -2,4 +2,5 @@
 
 KISS
 
+- bash
 - vim
