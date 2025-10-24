@@ -3,4 +3,5 @@
 KISS
 
 - bash
+- quilt
 - vim
