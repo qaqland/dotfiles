@@ -7,12 +7,13 @@ packadd! nohlsearch
 packadd! comment
 packadd! editorconfig
 
-if exists('g:loaded_plug')
+if !empty(glob('~/.vim/autoload/plug.vim'))
 	plug#begin()
 
-	Plug 'yegappan/lsp'
-	Plug 'junegunn/fzf.vim'
 	Plug 'airblade/vim-gitgutter'
+	Plug 'junegunn/fzf.vim'
+	Plug 'yegappan/lsp'
+	Plug 'yegappan/mru'
 
 	plug#end()
 endif
@@ -123,7 +124,7 @@ enddef
 
 augroup lsp
 	autocmd!
-	autocmd User LspSetup LspInit()
+	autocmd User silent! LspSetup LspInit()
 	autocmd User LspAttached LspKeys()
 	autocmd BufWritePost * silent! :LspFormat
 augroup end
