@@ -3,5 +3,6 @@
 KISS
 
 - bash
+- git
 - quilt
 - vim

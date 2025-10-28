@@ -1,0 +1,15 @@
+[user]
+	name = qaqland
+	email = qaq@qaq.land
+[init]
+	defaultBranch = main
+
+[http "https://gitlab.alpinelinux.org/"]
+	proxy = socks5h://127.0.0.1:7897
+
+[http "https://github.com/"]
+	proxy = socks5h://127.0.0.1:7897
+
+[alias]
+	can = commit --amend --no-edit --date=now
+	ss = status
