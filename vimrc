@@ -3,9 +3,10 @@ vim9script
 set nocompatible
 source $VIMRUNTIME/defaults.vim
 
-packadd! nohlsearch
 packadd! comment
 packadd! editorconfig
+packadd! hlyank
+packadd! nohlsearch
 
 if !empty(glob('~/.vim/autoload/plug.vim'))
 	plug#begin()
